@@ -1,0 +1,39 @@
+html {
+	box-sizing: border-box;
+}
+*
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0.6rem;
+}
+body {
+	text-align: center;
+}
+main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	width: 5rem;
+}
+
+section:nth-of-type(1) {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section:nth-of-type(2) {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 380px) {
+	section:nth-of-type(1) {
+		flex-direction: column;
+	}
+}
